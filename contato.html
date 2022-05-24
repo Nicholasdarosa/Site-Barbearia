@@ -1,0 +1,99 @@
+<!DOCTYPE html>  <!--serve para dizer ao navegador qual versao html estamos utilizando -->
+<html>
+	<head> <!-- head é as informações que eu vou passar para o meu navegador,   e dentro do head tem que usar o dicionario que utilizamos -->
+		<meta charset="UTF-8">
+		<title>Produtos - Barbearia Alura</title>
+
+		<link rel="stylesheet" href="reset.css"><!-- reset é uma arquuvos que limpa tudo oque o navegador cria,
+			a ordem é muito importente por isto tem que ser em primeiro, por isso o reset.css limpa  para que o produtos.css seja morstrado. --> 
+		<link rel="stylesheet" href="style.css"> <!--  toda a configuração da pagina-->
+	</head> 
+	<body>
+		<header> <!-- header é o cabeçalho-->
+			<div class="caixa">
+				<h1><img src="logo.png"></h1> <!--imagem do conteudo principal do meu titulo-->
+
+				<nav>  <!-- menu de navegação com links entre paginas -->
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="produtos.html">Produtos</a></li>
+						<li><a href="contato.html">Contato</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+        <main>
+            <form>
+                <label for="nomesobrenome">Nome e Sobrenome</label>  <!-- criando formulario de email -->
+                <input type="text" id="nomesobrenome" class="input-padrao" required>
+
+                 <label for="email">Email</label>
+                 <input type="email" id="email"class="input-padrao"required placeholder="seuemail@dominio.com">
+
+                 <label for="telefone">Telefone</label>
+                 <input type="telefone" id="telefone" class="input-padrao"required placeholder="(XX) XXXXX-XXXX">
+
+				<label for="mensagem">Mensagem</label>
+				 <textarea cols="30" rows="10" id="mensagem" class="input-padrao" required >  
+				 </textarea> <!-- indiquei o tamabho do meu testo e se a pagina for carregadda volta para o cols e rows que defini -->
+				
+				<fieldset>
+				 <legend>Como Prefere nosso Contato</legend>
+				<label for="radio-email"> <input type="radio" name="contato" value="email" id="radio-email"> Email</label>
+				    <!-- quando é selecionado um e vai selecionar o outro ele desmarca, deixando apenas um marcado -->
+
+				<label for="radio-telefone"> <input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>
+				  
+
+				<label for="radio-whatsapp"> <input type="radio" name="contato" value="whatsaApp" id="radio-whatsapp" checked> WhatsaApp</label>
+				
+				</fieldset>
+
+		<fieldset>
+				<legend>Qual horario prefere ser atendido?</legend>
+			<select>
+				<option>Manhã</option>	
+				<option>Tarde</option>
+				<option>Noite</option>
+			</select>
+		</fieldset>
+		
+			<label class="checkbox"><input type="checkbox" checked>  Gostaria de Receber nossas novidades por email</label>
+
+                 <input type="submit" value="Enviar Formularo" class="enviar">
+        </form>
+
+		<table>
+			<thead>
+			<tr>
+				<th>Dia</th>
+				<th>horario</th>
+			</tr>
+			</thead>
+
+			<tbody>
+
+				<tr>
+					<td>Segunda</td>
+					<td> 8h ~ 20h</td>
+				</tr>
+				<tr>
+					<td>Quarta</td>
+					<td>8h ~ 20h</td>
+				</tr>
+				<tr>
+					<td>Sexta</td>
+					<td>8h ~ 20h</td>
+				</tr>
+				</tbody>
+		</table>
+
+        </main>
+
+        <footer>  <!-- Tag do Rodapé -->
+			<img src="logo-branco.png">  <!--  imagem de fundo do roda pé-->
+			<p class="copyright">&copy; Copyright Barbearia Alura - 2019</p>
+		</footer>
+	</body>
+</html>

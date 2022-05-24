@@ -1,0 +1,54 @@
+<!DOCTYPE html>  <!--serve para dizer ao navegador qual versao html estamos utilizando -->
+<html>
+	<head> <!-- head é as informações que eu vou passar para o meu navegador,   e dentro do head tem que usar o dicionario que utilizamos -->
+		<meta charset="UTF-8">
+		<title>Produtos - Barbearia Alura</title>
+
+		<link rel="stylesheet" href="reset.css"><!-- reset é uma arquuvos que limpa tudo oque o navegador cria,
+			a ordem é muito importente por isto tem que ser em primeiro, por isso o reset.css limpa  para que o produtos.css seja morstrado. --> 
+		<link rel="stylesheet" href="style.css"> <!--  toda a configuração da pagina-->
+	</head> 
+	<body>
+		<header> <!-- header é o cabeçalho-->
+			<div class="caixa">
+				<h1><img src="logo.png"></h1> <!--imagem do conteudo principal do meu titulo-->
+
+				<nav>  <!-- menu de navegação com links entre paginas -->
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="produtos.html">Produtos</a></li>
+						<li><a href="contato.html">Contato</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main>  <!-- conteudo principal da pagina com listas -->
+			<ul class="produtos">
+				<li>
+					<h2>Cabelo</h2>
+					<img src="cabelo.jpg">
+					<p class="produto-descricao">Na tesoura ou máquina, como o cliente preferir</p>
+					<p class="produto-preco">R$ 25,00</p>
+				</li>
+				<li>
+					<h2>Barba</h2>
+					<img src="barba.jpg">
+					<p class="produto-descricao">Corte e desenho profissional de barba</p>
+					<p class="produto-preco">R$ 18,00</p>
+				</li>
+				<li>
+					<h2>Cabelo + Barba</h2>
+					<img src="cabelo+barba.jpg">
+					<p class="produto-descricao">Pacote completo de cabelo e barba</p>
+					<p class="produto-preco">R$ 35,00</p>
+				</li>
+			</ul>
+		</main>
+
+		<footer>  <!-- Tag do Rodapé -->
+			<img src="logo-branco.png">  <!--  imagem de fundo do roda pé-->
+			<p class="copyright">&copy; Copyright Barbearia Alura - 2019</p>
+		</footer>
+	</body>
+</html>
